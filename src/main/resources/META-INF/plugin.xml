@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>com.github.f2koi.ideavim-hangeul-switch</id>
+    <name>IdeaVim Hangeul Switch</name>
+    <version>0.1.0</version>
+    <vendor>f2koi</vendor>
+
+    <description><![CDATA[
+    Automatically switches IME to English mode when entering Normal mode in IdeaVim,
+    and restores the previous input mode when returning to Insert mode.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>IdeaVIM</depends>
+
+    <extensions defaultExtensionNs="IdeaVIM">
+        <vimExtension name="hangeul-switch" implementation="com.github.f2koi.hangeulswitch.HangeulSwitchExtension" />
+    </extensions>
+</idea-plugin>
